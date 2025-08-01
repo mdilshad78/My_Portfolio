@@ -93,7 +93,7 @@ export default function Portfolio() {
                                             <i className="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                         <button className="hover:text-blue-400">
-                                            <a href="" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
+                                            <a href="https://www.justsearch.net.in/" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
                                         </button>
                                     </div>
                                     <p className="text-white text-sm">Just Search</p>
