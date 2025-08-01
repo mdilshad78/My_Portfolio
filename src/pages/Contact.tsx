@@ -50,14 +50,6 @@ export default function Contact() {
                                 </div>
 
                                 {/* Map */}
-                                {/* <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                    className="w-full h-64 mt-4 rounded-md"
-                                    loading="lazy"
-                                    allowFullScreen
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                ></iframe> */}
-
                                 <iframe width="100%" height=""
                                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kamla%20Nehru%20colony+(MyPortfolio)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                     className="w-full h-64 mt-4 rounded-md"
