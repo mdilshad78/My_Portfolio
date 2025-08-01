@@ -26,7 +26,7 @@ export default function Navbar({ onScroll }: NavbarProps) {
     return (
         <>
             {/* Toggle button (visible only below 1000px) */}
-            <div className="xl:hidden fixed top-4 left-4 z-50">
+            <div className="md:hidden fixed top-4 left-4 z-50">
                 <button
                     onClick={() => setOpen(!open)}
                     className="text-white bg-blue-600 p-2 rounded"
@@ -39,7 +39,7 @@ export default function Navbar({ onScroll }: NavbarProps) {
             <div
                 className={`fixed top-0 left-0 h-screen w-[300px] bg-[#0f172a] text-white text-center px-4 py-6 flex flex-col items-center justify-items-center space-y-6 overflow-y-auto z-40 transition-transform duration-300
                 ${open ? "translate-x-0 " : "-translate-x-full"} 
-                xl:translate-x-0 xl:block`}
+                md:translate-x-0 md:block`}
             >
                 <img
                     src={profile}
