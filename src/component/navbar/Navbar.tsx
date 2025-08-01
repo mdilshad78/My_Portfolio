@@ -5,6 +5,7 @@ import {
     FaLinkedinIn,
     FaXTwitter,
     FaBars,
+    FaGithub,
 } from "react-icons/fa6";
 import {
     FiHome,
@@ -49,10 +50,11 @@ export default function Navbar({ onScroll }: NavbarProps) {
                 <h2 className="text-xl font-semibold">Mohammad Dilshad</h2>
 
                 <div className="flex space-x-4">
-                    <FaXTwitter className="cursor-pointer hover:text-blue-500" />
+                    {/* <Link to=''><FaXTwitter className="cursor-pointer hover:text-blue-500" /></Link> */}
                     <FaFacebookF className="cursor-pointer hover:text-blue-500" />
-                    <FaInstagram className="cursor-pointer hover:text-pink-500" />
-                    <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+                    <Link to='https://www.instagram.com/cricketer_dilshad/'><FaInstagram className="cursor-pointer hover:text-pink-500" /></Link>
+                    <Link to='https://www.linkedin.com/in/mohammad-dilshad-2b1706267/'><FaLinkedinIn className="cursor-pointer hover:text-blue-700" /></Link>
+                    <Link to='https://github.com/mdilshad78'><FaGithub className="cursor-pointer hover:text-blue-700" /></Link>
                 </div>
 
                 <nav className="flex-1 w-full">
