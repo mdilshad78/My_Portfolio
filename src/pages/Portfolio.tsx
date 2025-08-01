@@ -4,11 +4,11 @@ import img3 from '../assets/images/ecommerce.jpg';
 
 export default function Portfolio() {
     return (
-        <section id="portfolio" className="mt-12 px-4 md:px-12">
-            <div className="max-w-7xl mx-auto" data-aos="fade-up">
+        <section id="portfolio" className="mt-12 px-4 md:px-10">
+            <div className="max-w-7xl mx-auto " data-aos="fade-up">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-8">
                     <div className="md:col-span-1" />
-                    <div className="md:col-span-11">
+                    <div className="xl:col-span-11 md:col-span-12">
                         <h2 className="text-3xl font-bold mb-2 text-gray-800">Portfolio</h2>
                         <p className="text-gray-600">
                             Welcome to my portfolio, where creativity meets innovation. Here, you'll find a showcase
@@ -29,7 +29,7 @@ export default function Portfolio() {
 
                 <div className="grid grid-cols-1 md:grid-cols-12" data-aos="fade-up" data-aos-delay="200">
                     <div className="md:col-span-1" />
-                    <div className="md:col-span-11">
+                    <div className="xl:col-span-11 md:col-span-12">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {/* Project 1 */}
                             <div className="relative group w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg">
