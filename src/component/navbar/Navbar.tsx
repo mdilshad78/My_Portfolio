@@ -23,6 +23,11 @@ interface NavbarProps {
 export default function Navbar({ onScroll }: NavbarProps) {
     const [open, setOpen] = useState(false);
 
+    const handleNavClick = (section: string) => {
+        onScroll(section);
+        setOpen(false); // Close sidebar after clicking
+    };
+
     return (
         <>
             {/* Toggle button (visible only below 1000px) */}
@@ -31,7 +36,7 @@ export default function Navbar({ onScroll }: NavbarProps) {
                     onClick={() => setOpen(!open)}
                     className="text-white bg-blue-600 p-2 rounded"
                 >
-                    {open ? <FaBars /> : <FaBars />}
+                    <FaBars />
                 </button>
             </div>
 
@@ -49,29 +54,33 @@ export default function Navbar({ onScroll }: NavbarProps) {
                 <h2 className="text-xl font-semibold">Mohammad Dilshad</h2>
 
                 <div className="flex space-x-4">
-                    {/* <Link to=''><FaXTwitter className="cursor-pointer hover:text-blue-500" /></Link> */}
                     <FaFacebookF className="cursor-pointer hover:text-blue-500" />
-                    <Link to='https://www.instagram.com/cricketer_dilshad/'><FaInstagram className="cursor-pointer hover:text-pink-500" /></Link>
-                    <Link to='https://www.linkedin.com/in/mohammad-dilshad-2b1706267/'><FaLinkedinIn className="cursor-pointer hover:text-blue-700" /></Link>
-                    <Link to='https://github.com/mdilshad78'><FaGithub className="cursor-pointer hover:text-blue-700" /></Link>
+                    <Link to="https://www.instagram.com/cricketer_dilshad/"><FaInstagram className="cursor-pointer hover:text-pink-500" /></Link>
+                    <Link to="https://www.linkedin.com/in/mohammad-dilshad-2b1706267/"><FaLinkedinIn className="cursor-pointer hover:text-blue-700" /></Link>
+                    <Link to="https://github.com/mdilshad78"><FaGithub className="cursor-pointer hover:text-blue-700" /></Link>
                 </div>
 
                 <nav className="flex-1 w-full">
                     <ul className="space-y-5 text-xl ps-4">
                         <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
-                            <FiHome /> <span><Link to='' onClick={() => onScroll("home")}>Home</Link></span>
+                            <FiHome />
+                            <span onClick={() => handleNavClick("home")}>Home</span>
                         </li>
                         <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
-                            <FiUser /> <span><Link to='' onClick={() => onScroll("about")}>About</Link></span>
+                            <FiUser />
+                            <span onClick={() => handleNavClick("about")}>About</span>
                         </li>
                         <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
-                            <FiFileText /> <span><Link to='' onClick={() => onScroll("resume")}>Resume</Link></span>
+                            <FiFileText />
+                            <span onClick={() => handleNavClick("resume")}>Resume</span>
                         </li>
                         <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
-                            <FiImage /> <span><Link to='' onClick={() => onScroll("protfolio")}>Portfolio</Link></span>
+                            <FiImage />
+                            <span onClick={() => handleNavClick("protfolio")}>Portfolio</span>
                         </li>
                         <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
-                            <FiMail /> <span><Link to='' onClick={() => onScroll("contact")}>Contact</Link></span>
+                            <FiMail />
+                            <span onClick={() => handleNavClick("contact")}>Contact</span>
                         </li>
                     </ul>
                 </nav>
@@ -79,5 +88,3 @@ export default function Navbar({ onScroll }: NavbarProps) {
         </>
     );
 }
-
-

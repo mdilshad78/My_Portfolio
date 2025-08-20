@@ -47,7 +47,7 @@ export default function Portfolio() {
                                             <i className="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                         <button className="hover:text-blue-400">
-                                            <a href="https://github.com/mdilshad78/Hostel-Room-Booking.git" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
+                                            <a href="https://hostel-room-booking-frontend.vercel.app/" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
                                         </button>
                                     </div>
                                     <p className="text-white text-sm">Hostel Facilities for Students.</p>
@@ -70,7 +70,7 @@ export default function Portfolio() {
                                             <i className="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                         <button className="hover:text-blue-400">
-                                            <a href="https://hostel-room-booking-frontend.vercel.app/" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
+                                            <a href="https://github.com/mdilshad78/CRUD" title="More Details" className="details-link"><i className="fa-solid fa-link"></i></a>
                                         </button>
                                     </div>
                                     <p className="text-white text-sm">Prepared CRUD to Login/Logout Pages.</p>
