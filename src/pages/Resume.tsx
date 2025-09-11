@@ -67,7 +67,7 @@ export default function Resume() {
                                 </div>
 
                                 <div>
-                                    <h4 className="font-bold">MEAR Stack, Internship</h4>
+                                    <h4 className="font-bold">MERN Stack, Internship</h4>
                                     <p className="text-sm font-medium">8/2024 - 1/2025</p>
                                     <p className="italic text-sm">Tech Fly IT-Solution,Jodhpur</p>
                                     <ul className="list-disc list-inside text-sm mt-2 space-y-1">
