@@ -55,6 +55,18 @@ export default function Resume() {
                                 {/* MEARN Stack */}
                                 <div>
                                     <h4 className="font-bold">MERN Stack Developer</h4>
+                                    <p className="text-sm font-medium">Aug 2025 - Present</p>
+                                    <p className="italic text-sm">Freelance</p>
+                                    <ul className="list-disc list-inside text-sm mt-2 space-y-1">
+                                        <li>Engineered end-to-end web applications using the MERN stack, delivering scalable and maintainable solutions.</li>
+                                        <li>Designed and consumed RESTful APIs in Node.js/Express, ensuring smooth integration between frontend and backend.</li>
+                                        <li>Built dynamic, reusable React.js components with Tailwind CSS, improving UI consistency and responsiveness.</li>
+                                        <li>Built dynamic, reusable React.js components with Tailwind CSS, improving UI consistency and responsiveness.</li>
+                                        <li>Deployed applications on cloud platforms (e.g., AWS, Vercel, Render) with environment-based configuration.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-bold">MERN Stack Developer</h4>
                                     <p className="text-sm font-medium">Apr 2025 - Jul 2025</p>
                                     <p className="italic text-sm">Rotary Balaji Pvt Ltd, Jodhpur</p>
                                     <ul className="list-disc list-inside text-sm mt-2 space-y-1">
@@ -77,6 +89,7 @@ export default function Resume() {
                                         <li>Deployed full-stack MERN applications websites handles.</li>
                                     </ul>
                                 </div>
+                               
 
                                 <div
                                     className="mt-6"
@@ -86,7 +99,7 @@ export default function Resume() {
                                     <div className="w-full sm:w-1/2">
                                         <a
                                             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition duration-300"
-                                            href="https://drive.google.com/file/d/1JN0_ekNxYhyFJzSWM7CLtYw9hHtb488c/view?usp=sharing"
+                                            href="https://drive.google.com/file/d/1O99OIWTgGuF6HXy0DfKJPrdhE-D-xjv-/view?usp=sharing"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
