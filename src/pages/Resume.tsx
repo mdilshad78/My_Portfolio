@@ -54,7 +54,7 @@ export default function Resume() {
                             <div className="border-l-4 border-blue-500 pl-4 space-y-6">
                                 {/* MEARN Stack */}
                                 <div>
-                                    <h4 className="font-bold">MERN Stack Developer</h4>
+                                    <h4 className="font-bold">Full Stack Developer</h4>
                                     <p className="text-sm font-medium">Aug 2025 - Present</p>
                                     <p className="italic text-sm">Freelance</p>
                                     <ul className="list-disc list-inside text-sm mt-2 space-y-1">
@@ -99,7 +99,7 @@ export default function Resume() {
                                     <div className="w-full sm:w-1/2">
                                         <a
                                             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition duration-300"
-                                            href="https://drive.google.com/file/d/1O99OIWTgGuF6HXy0DfKJPrdhE-D-xjv-/view?usp=sharing"
+                                            href="https://drive.google.com/file/d/1jjDpVtoT87o0KhbvseG7uHGiM50bilzQ/view?usp=sharing"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
