@@ -1,6 +1,37 @@
+import { useState } from "react";
 import Footer from "../component/Footer";
+import emailjs from 'emailjs-com'
 
 export default function Contact() {
+
+    const [formData, setformData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setformData({ ...formData, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        emailjs.send(
+            "service_5jchx8l",
+            "template_jq7bnqd",
+            formData,
+            "fgqYaMNSNwm8heYpu"
+        ).then(
+            () => {
+                alert("Message sent ✅");
+                setformData({ name: "", email: "", subject: "", message: "" });
+            },
+            (err) => alert("Failed to send ❌ " + err.text)
+        );
+    }
+
     return (
         <section id="contact" className="mt-10 px-4 mb-5">
             {/* Section Title */}
@@ -63,7 +94,7 @@ export default function Contact() {
 
                         {/* Contact Form */}
                         <div className="lg:w-7/12 mt-2">
-                            <form className="space-y-4" data-aos="fade-up" data-aos-delay="200">
+                            <form className="space-y-4" data-aos="fade-up" data-aos-delay="200" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <label htmlFor="name-field" className="block text-sm font-medium text-gray-700 mb-1">
@@ -75,6 +106,8 @@ export default function Contact() {
                                             name="name"
                                             required
                                             className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            value={formData.name}
+                                            onChange={handleChange}
                                         />
                                     </div>
                                     <div>
@@ -87,6 +120,8 @@ export default function Contact() {
                                             name="email"
                                             required
                                             className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            value={formData.email}
+                                            onChange={handleChange}
                                         />
                                     </div>
                                 </div>
@@ -101,6 +136,8 @@ export default function Contact() {
                                         name="subject"
                                         required
                                         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        value={formData.subject}
+                                        onChange={handleChange}
                                     />
                                 </div>
 
@@ -114,6 +151,8 @@ export default function Contact() {
                                         rows={6}
                                         required
                                         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                     ></textarea>
                                 </div>
 

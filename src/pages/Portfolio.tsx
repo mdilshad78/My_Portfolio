@@ -24,14 +24,6 @@ const projects: Project[] = [
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Prepared CRUD to Login/Logout Pages.",
-        img: img2,
-        link: "https://github.com/mdilshad78/CRUD",
-        category: "website",
-    },
-    {
-        id: 3,
         title: "Project 3",
         description: "Just Search",
         img: img3,
@@ -39,12 +31,20 @@ const projects: Project[] = [
         category: "website",
     },
     {
-        id: 4,
+        id: 3,
         title: "Project 4",
         description: "Oopss Shree Enterprises",
         img: oopss,
-        link: "",
+        link: "https://shreeenterprisesgoa.in/",
         category: "app",
+    },
+    {
+        id: 4,
+        title: "Project 2",
+        description: "Prepared CRUD to Login/Logout Pages.",
+        img: img2,
+        link: "https://github.com/mdilshad78/CRUD",
+        category: "website",
     },
 ];
 
@@ -82,8 +82,8 @@ export default function Portfolio() {
                 >
                     <li
                         className={`cursor-pointer pb-1 ${activeFilter === "all"
-                                ? "border-b-2 border-blue-600"
-                                : "border-b-2 border-transparent"
+                            ? "border-b-2 border-blue-600"
+                            : "border-b-2 border-transparent"
                             }`}
                         onClick={() => setActiveFilter("all")}
                     >
@@ -91,8 +91,8 @@ export default function Portfolio() {
                     </li>
                     <li
                         className={`cursor-pointer pb-1 ${activeFilter === "website"
-                                ? "border-b-2 border-blue-600"
-                                : "border-b-2 border-transparent"
+                            ? "border-b-2 border-blue-600"
+                            : "border-b-2 border-transparent"
                             }`}
                         onClick={() => setActiveFilter("website")}
                     >
@@ -100,8 +100,8 @@ export default function Portfolio() {
                     </li>
                     <li
                         className={`cursor-pointer pb-1 ${activeFilter === "app"
-                                ? "border-b-2 border-blue-600"
-                                : "border-b-2 border-transparent"
+                            ? "border-b-2 border-blue-600"
+                            : "border-b-2 border-transparent"
                             }`}
                         onClick={() => setActiveFilter("app")}
                     >
@@ -118,7 +118,7 @@ export default function Portfolio() {
                     <div className="md:col-span-1" />
                     <div className="xl:col-span-11 md:col-span-12">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {filteredProjects.map((project) => (
+                            {filteredProjects.slice(0, 3).map((project) => (
                                 <div
                                     key={project.id}
                                     className="relative group w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg"
