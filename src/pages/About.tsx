@@ -1,4 +1,4 @@
-import img1 from '../assets/images/my.jpg';
+import img1 from '../assets/images/myy.jpg';
 
 export default function About() {
     return (

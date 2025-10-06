@@ -13,7 +13,7 @@ import {
     FiImage,
     FiMail,
 } from "react-icons/fi";
-import profile from "../../assets/images/my.jpg";
+import profile from "../../assets/images/myy.jpg";
 import { Link } from "react-router-dom";
 
 interface NavbarProps {

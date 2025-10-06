@@ -44,7 +44,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-
+            
             {/* Contact Form & Info */}
             <div className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex flex-col lg:flex-row gap-6">
