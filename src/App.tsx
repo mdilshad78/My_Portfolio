@@ -7,6 +7,7 @@ import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import './App.css'
 import Contact from './pages/Contact';
+import "aos/dist/aos.css";
 
 export default function App() {
   const homeRef = useRef<HTMLDivElement | null>(null);
@@ -51,7 +52,7 @@ export default function App() {
           <div ref={contactRef}><Contact /></div>
         </div>
       </div >
-     
+
     </>
   );
 }

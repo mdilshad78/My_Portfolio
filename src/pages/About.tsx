@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div>
             {/* About Section */}
-            <section id="about" className="mt-10 w-full">
+            <section id="about" className="mt-10 w-full" data-aos="fade-down">
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-4">About</h2>
                     <p className="text-gray-700 mb-8">
@@ -44,7 +44,7 @@ export default function About() {
             </section>
 
             {/* Stats Section */}
-            <section className="mt-16">
+            <section className="mt-16" data-aos="fade-down">
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-4">Statistic</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -65,7 +65,7 @@ export default function About() {
             </section>
 
             {/* Skills Section */}
-            <section className="mt-16">
+            <section className="mt-16" data-aos="fade-down">
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-4">Skills</h2>
                     <p className="text-gray-700 mb-8">This is all my Skills.</p>

@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <section id="resume" className="mt-20 p-10 bg-gradient-to-br from-sky-100 to-white text-gray-800">
+        <section id="resume" data-aos="fade-down" className="mt-20 p-10 bg-gradient-to-br from-sky-100 to-white text-gray-800">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
                 <div className="mb-12">
