@@ -81,7 +81,7 @@ export default function About() {
                         <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6 rounded">
                             <h3 className="text-xl font-semibold text-center">BackEnd Development</h3>
                             <div className="grid grid-cols-2 gap-4 mt-4">
-                                {['Node JS', 'ExpressJS', 'MongoDB', 'SQL'].map(skill => (
+                                {['Node JS', 'ExpressJS', 'MongoDB', 'SQL','PostgreSQL','Prisma'].map(skill => (
                                     <h5 key={skill} className="bg-green-600 py-1 px-2 rounded text-center">{skill}</h5>
                                 ))}
                             </div>

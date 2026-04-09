@@ -44,7 +44,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            
+
             {/* Contact Form & Info */}
             <div className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 <div className="flex flex-col lg:flex-row gap-6">
@@ -81,8 +81,8 @@ export default function Contact() {
                                 </div>
 
                                 {/* Map */}
-                                <iframe width="100%" height=""
-                                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kamla%20Nehru%20colony+(MyPortfolio)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.9257781328417!2d73.01187687022895!3d26.266480769945414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c3ef963efab%3A0x202a47beb6144707!2sIsaiyon%20ka%20Kabristaan!5e0!3m2!1sen!2sin!4v1775713648749!5m2!1sen!2sin"
+                                    width="600"
                                     className="w-full h-64 mt-4 rounded-md"
                                     loading="lazy"
                                     allowFullScreen
@@ -91,6 +91,9 @@ export default function Contact() {
                                 </iframe>
                             </div>
                         </div>
+
+
+
 
                         {/* Contact Form */}
                         <div className="lg:w-7/12 mt-2">

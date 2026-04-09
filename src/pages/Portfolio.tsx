@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import img1 from "../assets/images/hostel.jpg";
 import img2 from "../assets/images/CRUD.jpeg";
 import img3 from "../assets/images/ecommerce.jpg";
+import unisaurus from "../assets/images/unisaurus2.png"
 import oopss from '../assets/images/oopss.jpg'
 
 interface Project {
@@ -14,6 +15,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+    {
+        id: 5,
+        title: "Project 5",
+        description: "Unisaurus",
+        img: unisaurus,
+        link: "https://demo2.unisaurus.in/",
+        category: "website",
+    },
     {
         id: 1,
         title: "Project 1",
@@ -46,17 +56,29 @@ const projects: Project[] = [
         link: "https://github.com/mdilshad78/CRUD",
         category: "website",
     },
+
+
 ];
 
 export default function Portfolio() {
     const [activeFilter, setActiveFilter] = useState<"all" | "website" | "app">(
         "all"
     );
+    const [visibleProjectsCount, setVisibleProjectsCount] = useState(3);
 
     const filteredProjects =
         activeFilter === "all"
             ? projects
             : projects.filter((p) => p.category === activeFilter);
+
+    useEffect(() => {
+        setVisibleProjectsCount(3);
+    }, [activeFilter]);
+
+    const visibleProjects = filteredProjects.slice(0, visibleProjectsCount);
+    const handleLoadMore = () => {
+        setVisibleProjectsCount((currentCount) => currentCount + 3);
+    };
 
     return (
         <section id="portfolio" className="mt-12 px-4 py-2 md:px-10 bg-gray-100">
@@ -118,7 +140,7 @@ export default function Portfolio() {
                     <div className="md:col-span-1" />
                     <div className="xl:col-span-11 md:col-span-12">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {filteredProjects.slice(0, 3).map((project) => (
+                            {visibleProjects.map((project) => (
                                 <div
                                     key={project.id}
                                     className="relative group w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg"
@@ -131,9 +153,6 @@ export default function Portfolio() {
 
                                     {/* Overlay */}
                                     <div className="absolute inset-0 bg-gray-800 bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <span className="bg-blue-600 text-white px-3 py-1 text-xs rounded mb-2">
-                                            {project.title}
-                                        </span>
                                         <div className="flex gap-4 mb-2 text-white text-xl">
                                             <button className="hover:text-blue-400">
                                                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -155,6 +174,17 @@ export default function Portfolio() {
                                 </div>
                             ))}
                         </div>
+                        {visibleProjectsCount < filteredProjects.length && (
+                            <div className="mt-8 mb-3 flex justify-center">
+                                <button
+                                    type="button"
+                                    onClick={handleLoadMore}
+                                    className="rounded-full cursor-pointer bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:scale-105 hover:bg-blue-700"
+                                >
+                                    Load More Projects
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

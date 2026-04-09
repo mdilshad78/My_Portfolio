@@ -54,6 +54,14 @@ export default function Resume() {
                             <div className="border-l-4 border-blue-500 pl-4 space-y-6">
                                 {/* MEARN Stack */}
                                 <div>
+                                    <h4 className="font-bold">Junior Full Stack Developer</h4>
+                                    <p className="text-sm font-medium">Dec 2025 - Present</p>
+                                    <p className="italic text-sm">Betasaurus Digital Marketing Agency</p>
+                                    <p className="text-sm mt-2 text-justify">
+                                        As a Junior Full Stack Developer, I have actively contributed to designing, developing, and maintaining end-to-end web applications using the MERN stack. My responsibilities include building responsive and interactive user interfaces with React.js and Tailwind CSS, and creating robust backend architectures and RESTful APIs using Node.js and Express or Bun. I collaborate closely with cross-functional teams to ensure seamless integration, high performance, and scalable solutions, while consistently writing clean, maintainable code and deploying applications to modern cloud platforms.
+                                    </p>
+                                </div>
+                                <div>
                                     <h4 className="font-bold">Full Stack Developer</h4>
                                     <p className="text-sm font-medium">Aug 2025 - Present</p>
                                     <p className="italic text-sm">Freelance</p>
@@ -78,7 +86,7 @@ export default function Resume() {
                                     </ul>
                                 </div>
 
-                                <div>
+                                {/* <div>
                                     <h4 className="font-bold">MERN Stack, Internship</h4>
                                     <p className="text-sm font-medium">8/2024 - 1/2025</p>
                                     <p className="italic text-sm">Tech Fly IT-Solution,Jodhpur</p>
@@ -88,7 +96,7 @@ export default function Resume() {
                                         <li>Built responsive and interactive user interfaces using React.js, and managed state changes and component lifecycle.</li>
                                         <li>Deployed full-stack MERN applications websites handles.</li>
                                     </ul>
-                                </div>
+                                </div> */}
                                
 
                                 <div
