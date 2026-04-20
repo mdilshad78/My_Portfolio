@@ -4,6 +4,7 @@ import img2 from "../assets/images/CRUD.jpeg";
 import img3 from "../assets/images/ecommerce.jpg";
 import unisaurus from "../assets/images/unisaurus2.png"
 import oopss from '../assets/images/oopss.jpg'
+import nriq from '../assets/images/NRIQ.png'
 
 interface Project {
     id: number;
@@ -16,6 +17,14 @@ interface Project {
 
 const projects: Project[] = [
 
+    {
+        id: 6,
+        title: "Project 6",
+        description: "NRIQ",
+        img: nriq,
+        link: "",
+        category: "website",
+    },
     {
         id: 5,
         title: "Project 5",
