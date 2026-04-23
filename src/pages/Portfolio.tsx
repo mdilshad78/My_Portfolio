@@ -22,7 +22,7 @@ const projects: Project[] = [
         title: "Project 6",
         description: "NRIQ",
         img: nriq,
-        link: "",
+        link: "https://www.nriqservices.com/",
         category: "website",
     },
     {
