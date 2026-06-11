@@ -5,6 +5,7 @@ import img3 from "../assets/images/ecommerce.jpg";
 import unisaurus from "../assets/images/unisaurus2.png"
 import oopss from '../assets/images/oopss.jpg'
 import nriq from '../assets/images/NRIQ.png'
+import cdgi from '../assets/images/cdgi-logo.webp'
 
 interface Project {
     id: number;
@@ -17,6 +18,14 @@ interface Project {
 
 const projects: Project[] = [
 
+    {
+        id: 7,
+        title: "Project 7",
+        description: "CDGI",
+        img: cdgi,
+        link: "https://www.cdgi.edu.in/",
+        category: "website",
+    },
     {
         id: 6,
         title: "Project 6",
