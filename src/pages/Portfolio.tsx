@@ -6,6 +6,8 @@ import unisaurus from "../assets/images/unisaurus2.png"
 import oopss from '../assets/images/oopss.jpg'
 import nriq from '../assets/images/NRIQ.png'
 import cdgi from '../assets/images/cdgi-logo.webp'
+import brightvision from '../assets/images/bright-vision.png'
+import aryaman from '../assets/images/aryaman.webp'
 
 interface Project {
     id: number;
@@ -24,6 +26,30 @@ const projects: Project[] = [
         description: "CDGI",
         img: cdgi,
         link: "https://www.cdgi.edu.in/",
+        category: "website",
+    },
+    {
+        id: 8,
+        title: "Project 8",
+        description: "Bright-Vision",
+        img: brightvision,
+        link: "https://brightvision.pro/en",
+        category: "website",
+    },
+    {
+        id: 9,
+        title: "Project 9",
+        description: "Aryaman Nursing College",
+        img: aryaman,
+        link: "https://www.aryamannursingcollege.com/",
+        category: "website",
+    },
+    {
+        id: 10,
+        title: "Project 10",
+        description: "Aryaman Pharmacy College",
+        img: aryaman,
+        link: "https://aryamanpharmacycollege.com/",
         category: "website",
     },
     {
