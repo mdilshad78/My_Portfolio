@@ -107,7 +107,7 @@ export default function Resume() {
                                     <div className="w-full sm:w-1/2">
                                         <a
                                             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition duration-300"
-                                            href="https://drive.google.com/file/d/1LW51HRsl1r4ml1SNRH1NRSPCx-b_TyjF/view?usp=sharing"
+                                            href="https://drive.google.com/file/d/18SZODogvMGuwIT6NSvkty7q9h9AJUqMT/view?usp=sharing"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
